@@ -1,0 +1,57 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('/banner2.png'); /* 👈 apni image ka path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Overlay for dark effect */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Text content */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #3b82f6; /* blue tone */
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #d1d5db; /* light gray text */
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #2563eb;
+}
