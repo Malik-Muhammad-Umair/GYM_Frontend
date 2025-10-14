@@ -1,9 +1,9 @@
-import { DatePipe } from '@angular/common';
+import { DatePipe, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-users-view',
-  imports: [DatePipe],
+  imports: [DatePipe,NgIf,NgFor],
   templateUrl: './users-view.html',
   styleUrl: './users-view.css'
 })

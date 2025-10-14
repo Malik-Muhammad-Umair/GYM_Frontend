@@ -12,6 +12,9 @@
         <button (click)="viewPlanDetails()" class="px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 hover:border-blue-500">
           View Plan
         </button>
+          <button (click)="payNow()" [class.opacity-50]="isFullyPaid" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500">
+          {{ isFullyPaid ? 'Logout' : 'Pay Now' }}
+        </button>
  
       </div>
     </div>
@@ -58,7 +61,7 @@
 
           <div class="mt-4 flex gap-3">
             <button class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500">Book a Class</button>
-            <button class="px-4 py-2 rounded-lg bg-transparent border border-gray-700">See Your Enrollment</button>
+            <button class="px-4 py-2 rounded-lg bg-transparent border border-gray-700">See Your Payment History</button>
           </div>
         </div>
 
