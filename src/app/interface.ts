@@ -4,3 +4,11 @@ interface Offer {
   description?: string;
   expires?: Date | null;
 }
+
+interface User{
+  id:number,
+   name: string,
+      email: string,
+      password: string,
+      subscriptions?: []
+}

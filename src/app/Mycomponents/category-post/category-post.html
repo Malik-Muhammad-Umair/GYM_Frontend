@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="font-extrabold text-2xl">Enroll in a Membership Plan</h1>
+
+  <form (ngSubmit)="onSubmit()" #enrollForm="ngForm">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" [(ngModel)]="enrollment.name" name="name" required placeholder="Enter your name" />
+    </div>
+
+    <div class="form-group">
+      <label>Start Date</label>
+      <input type="date" [(ngModel)]="enrollment.startDate" name="startDate" required />
+    </div>
+
+    <div class="form-group">
+      <label>End Date</label>
+      <input type="date" [(ngModel)]="enrollment.endDate" name="endDate" required />
+    </div>
+
+    <div class="form-group">
+      <label>Plan Type</label>
+      <select (change)="change()" [(ngModel)]="enrollment.planType" name="planType" required>
+        <option value="">Select Plan</option>
+        <option value="Basic">Basic</option>
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+      </select>
+    </div>
+<div class="div  justify-end flex  ">
+
+    <h1 class=" font-bold  text-2xl text-red-500">💸 Rs {{amount}}</h1>
+</div>
+    <button type="submit">Enroll Now</button>
+  </form>
+</div>
+ <footer class="py-6 text-center   bg-black text-gray-400 text-sm border-t border-gray-800">
+    © 2025 The Power House — All rights reserved.
+  </footer>

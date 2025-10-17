@@ -1,13 +1,15 @@
 import { DatePipe, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-users-view',
-  imports: [DatePipe,NgIf,NgFor],
+  imports: [DatePipe, NgIf, NgFor, RouterLink],
   templateUrl: './users-view.html',
   styleUrl: './users-view.css'
 })
 export class UsersView {
+   username=localStorage.getItem("username");
  user = {
     id: 1,
     name: 'Umair',
@@ -33,10 +35,7 @@ export class UsersView {
   }
 
   // Fee due?
-  get isFullyPaid(): boolean {
-    return this.user.paidAmount >= this.user.planFee;
-  }
-
+ 
   // Sessions progress percent
   get sessionsProgress(): number {
     const used = this.user.totalSessions - this.user.sessionsRemaining;

@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Umair",
+      "email": "umair@gmail.com",
+      "password": "1234",
+      "subscriptions": []
+    },
+    {
+      "id": "2",
+      "name": "Ali Khan",
+      "email": "ali.khan@gmail.com",
+      "password": "abcd",
+      "subscriptions": []
+    },
+    {
+      "id": "3",
+      "name": "Sara Ahmed",
+      "email": "sara@gmail.com",
+      "password": "pass123",
+      "subscriptions": []
+    },
+    {
+      "id": "4",
+      "name": "Bilal",
+      "email": "bilal@gmail.com",
+      "password": "bilal321",
+      "subscriptions": []
+    },
+    {
+      "id": "5",
+      "name": "Ayesha Noor",
+      "email": "ayesha@gmail.com",
+      "password": "ayesha123",
+      "subscriptions": []
+    }
+  ]
+}
